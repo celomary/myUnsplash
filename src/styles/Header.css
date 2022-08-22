@@ -1,0 +1,33 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    padding: 39px 0px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.leftSide {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rightSide {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .Header {
+        flex-direction: column-reverse;
+    } 
+    .leftSide {
+        justify-content: space-between;
+        width: 100%;
+    }   
+}

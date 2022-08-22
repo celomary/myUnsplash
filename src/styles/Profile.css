@@ -1,0 +1,268 @@
+.Profile {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Back {
+    margin-top: 20px;
+}
+
+.Back__btn {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    cursor: pointer;
+    font-family: var(--roboto);
+    font-size: 15px;
+}
+
+.ProfilePic {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: relative;
+}
+
+.ProfilePic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.editPics {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    right: 0;
+    cursor: pointer;
+    -webkit-box-shadow: 3px 0px 19px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 0px 19px -4px rgba(0,0,0,0.75);
+    box-shadow: 3px 0px 19px -4px rgba(0,0,0,0.75);
+}
+
+.UserPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 5px;
+}
+.profileUsername {
+    font-size: 20px;
+    font-family: var(--roboto-c);
+    font-weight: 700;
+    color: #000000;
+}
+
+.posts {
+    margin-top: 50px;
+}
+
+.postsTitle  {
+    font-size: 42px;
+    font-family: var(--roboto-c);
+}
+
+.popup, .popupProfile, .popupAddPost {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    gap: 20px;
+    display: none;
+}
+
+.popupProfile__container {
+    width: 50%;
+    background-color: #f0f0f0;
+    padding: 15px 20px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.popupProfile__container  > p {
+    font-size: 20px;
+    font-family: var(--roboto-c);
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.uploadImage {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    margin: 0 auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.popup__container {
+    width: 50%;
+    height: auto;
+    background-color: #f0f0f0;
+    padding: 12px 16px;
+    text-align: center;
+    font-family: var(--roboto);
+}
+
+.popup__container > p {
+    margin-bottom: 16px;
+}
+
+.popup__container img {
+    width: 150px;
+}
+
+.popup__btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.popup_btn {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--roboto);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+}
+
+.popup__yes:hover {
+    background-color: #EB5757;
+    color: #f0f0f0;
+}
+
+.popup__no:hover {
+    background-color: var(--primary-color);
+    color: #f0f0f0;
+}
+
+
+.popupProfile__btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.popupProfile_btn  {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--roboto);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+}
+
+.popupProfile__save {
+    background-color: var(--primary-color);
+    color: #f0f0f0;
+}
+
+.popupProfile__cancel {
+    background-color: #EB5757;
+    color: #f0f0f0;
+}
+
+.no_post {
+    font-size: 20px;
+    font-family: var(--roboto-c);
+    font-weight: 700;
+    color: #000000;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.popupAddPost__container {
+    width: 50%;
+    height: auto;
+    background-color: #ffffff;
+    padding: 24px 32px;
+    font-family: var(--roboto);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 12px;
+}
+
+.popupAddPost__container input {
+    width: 100%;
+    border: 1px solid #4F4F4F;
+    border-radius: 12px;
+    font-family: var(--roboto);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 18px;
+    color: #4F4F4F;
+}
+
+.popupAddPost__btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    align-items: center;
+}
+
+.popupAddPost__save {
+    background-color:  #3DB46D;
+    color: #f0f0f0;
+    padding: 18px 26px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--roboto);
+    cursor: pointer;
+}
+
+.popupAddPost__cancel {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: var(--roboto);
+    cursor: pointer;
+    color: #BDBDBD;
+}
+
+
+@media screen and (max-width: 768px) {
+    .popupProfile__container {
+        width: 95%;
+    }
+    .popup__container {
+        width: 95%;
+    }
+    .popupAddPost__container {
+        width: 95%;
+    }
+}

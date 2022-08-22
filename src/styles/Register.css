@@ -1,0 +1,151 @@
+.Register {
+    display: flex;
+}
+
+.RegisterLeft {
+    width: 40%;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;   
+}
+
+.RegisterLeft > img  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.RegisterLeftS {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.registerLogo {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.RegisterLeftS .logo {
+    width: 30px;
+    height: 30px;
+}
+
+.RegisterLeftSText {
+    margin: auto;
+    color: #ffffff;
+    width: 80%;
+}
+
+.RegistrationLeftTitle  {
+    font-family: var(--roboto-c);
+    font-size: 52px;
+}
+
+.RegistrationLeftSubTitle {
+    font-family: var(--roboto);
+    font-size: 16px;
+}
+
+.RegisterRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 60px;
+}
+
+.RegisterRightText {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.RegisterRightText h1 {
+    font-family: var(--roboto-c);
+    font-size: 42px;
+}
+
+.RegisterRightText p {
+    font-family: var(--roboto);
+    font-size: 14px;
+}
+
+.RegisterForm {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 67%;
+}
+
+.inputTextControl label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    font-family: var(--roboto);
+}
+
+.inputTextControl input {
+    width: 100%;
+    outline: none;
+    padding: 8px 12px;
+}
+
+.inputTextControl code {
+    font-size: 10px;
+    color: #D63301;
+}
+
+.RegisterInformation {
+    color: #767676;
+    font-size: 12px;
+}
+
+.RegisterBtn {
+    width: 100%;
+    text-align: center;
+    background-color: #121212;
+    color: #ffffff;
+    padding: 12px 16px;
+    font-family: var(--roboto);
+    cursor: pointer;
+}
+
+.loginLink {
+    color: #767676;
+}
+@media screen and (max-width: 768px)
+{
+    .Register {
+        flex-direction: column;
+    }
+    .RegisterLeft {
+        width: 100%;
+    }
+
+    .RegistrationLeftTitle {
+        font-size: 32px;
+    }
+    .RegistrationLeftSubTitle {
+        font-size: 16px;
+    }
+
+    .RegisterLeft {
+        height: 50vh;
+    }
+    .RegisterRight {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .RegisterForm  {
+        width: 80%;
+    }
+}

@@ -1,0 +1,14 @@
+.RegisterButton {
+    color:  #767676;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--roboto);
+    cursor: pointer;
+    transition: color .5s ease-in-out;
+}
+
+.RegisterButton:hover {
+    color: #121212;
+}

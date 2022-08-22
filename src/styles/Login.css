@@ -1,0 +1,85 @@
+.Login {
+    max-width: 426px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 24px;
+}
+
+.LoginHeaders {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.LoginHeaders h1 {
+    font-family: var(--roboto-c);
+}
+
+.LoginHeaders p {
+    font-family: var(--roboto);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.LoginFormInput {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.inputController label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: var(--roboto);
+    font-size: 14px;
+    color: #111111;
+}
+
+.inputController input {
+    width: 100%;
+    padding: 6px 12px;
+    outline: none;
+    border: 1px solid #727272;
+    border-radius: 3px;
+    font-family: var(--roboto);
+}
+
+
+.LoginBtn {
+    width: 100%;
+    text-align: center;
+    font-family: var(--roboto);
+    font-size: 16px;
+    background-color: #111111;
+    color: #f0f0f0;
+    padding: 9px 18px;
+    border-radius: 3px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.registerPageLink {
+    font-family: var(--roboto);
+    font-size: 14px;
+    margin-top: 20px;
+    
+}
+
+.registerPageLink p a {
+    color: #767676;
+}
+
+.Login code {
+    font-family: var(--roboto);
+    font-size: 14px;
+    color: #D63301;
+    text-align: center;
+}

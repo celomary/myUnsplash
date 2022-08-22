@@ -1,0 +1,76 @@
+
+.Picture  img {
+    width: 100%;
+    display: block;
+}
+
+.Picture {
+    overflow: hidden;
+    position: relative;
+}
+
+.PictureDetail {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: opacity .5s ease-in-out;
+}
+
+.PictureTop {
+    padding: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.DeleteBtn {
+    margin: 0 0 0 auto;
+    width: fit-content;
+    padding: 5px 15px;
+    border: 1px solid #EB5757;
+    color: #EB5757;
+    border-radius: 24px;
+    font-weight: 500;
+    font-family: var(--roboto);
+    cursor: pointer;
+}
+
+.PictureBottom {
+    margin: 32px 24px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: var(--roboto-c);
+}
+
+.Picture:hover .PictureDetail {
+    opacity: 1;
+}
+
+
+.Picture__user {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Picture__user img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Picture__user p {
+    color: #ffffff;
+    font-family: var(--roboto-c);
+    font-size: 14px;
+}
