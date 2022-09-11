@@ -3,6 +3,7 @@
     overflow: hidden;
     min-height: 60px;
     min-width: 300px;
+    background-color: #f0f0f0;
 }
 
 .Post img {
