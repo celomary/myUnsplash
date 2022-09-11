@@ -1,12 +1,16 @@
 
 .Picture  img {
-    width: 100%;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
     display: block;
 }
 
 .Picture {
     overflow: hidden;
     position: relative;
+    min-height: 60px;
+    min-width: 300px;
 }
 
 .PictureDetail {
@@ -63,8 +67,8 @@
 
 .Picture__user img {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 30px !important;
+    height: 30px !important;
     object-fit: cover;
     border-radius: 50%;
 }
