@@ -22,7 +22,7 @@ function App() {
           <Route path='/register' element={<Guards Component={Register} redirectRoute={"/profile"}  condition={!isLoggedIn()}/>}/>
           <Route path='/profile' element={<ProfileGuard />} />
           <Route path='/search' element={<SearchPage />} />
-          <Route path='/' element={<Home />}/>
+          <Route path='*' element={<Home />}/>
     </Routes>
   </Router>
 }
